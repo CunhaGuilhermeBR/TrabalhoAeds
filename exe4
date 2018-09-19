@@ -1,0 +1,21 @@
+public class Aplicacao extends CListaDup{
+	public CListaDup concatena(CListaDup  L1,  CListaDup  L2) {
+	CListaDup guarda = new CListaDup();
+	if (L1.quantidade() !=0) {
+	  do {
+		  guarda.insereComeco(L1.retornaPrimeiro());
+	  } while (L1.quantidade() !=0);
+	  
+	}
+	if (L2.quantidade() !=0) {
+		  do {
+			  guarda.insereComeco(L2.retornaPrimeiro());
+		  } while (L2.quantidade() !=0);	  
+		}
+	return guarda;
+	}
+	public static void main(String[] args) {
+     
+	}
+
+}
